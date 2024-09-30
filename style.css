@@ -81,6 +81,8 @@ body{
     width: 150px;
     height: 50px;
     font-size: 1.5rem;
+    animation: glow ease-in 2s infinite;
+    animation-delay: 3s;
 }
 .goLive__icon{
     padding-inline-end: 0.5rem;
@@ -88,6 +90,23 @@ body{
 .goLive__button:hover{
     background-color: rgba(128, 128, 128, 0.192);
 }
+
+@keyframes glow {
+    0%{
+        box-shadow: 0px 0px 15px 0px rgba(13, 255, 0, 0); 
+    }
+    25%{
+        box-shadow: 0px 0px 15px 0px rgb(13, 255, 0);
+    }
+    50%{
+        box-shadow: 0px 0px 25px 0px rgb(13, 255, 0);
+    }
+    100%{
+        box-shadow: 0px 0px 15px 0px rgba(13, 255, 0, 0.189);
+    }
+}
+
+
 .main{
     display: flex;
     flex-direction: column;
